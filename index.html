@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <style>
+        body {font-family: 'Aclonica';font-size: 22px;}
+    </style>
+
+    <script>
+        function display(){
+            document.getElementById("myusername").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setImage(){
+            document.getElementById("profile").style.backgroundImage = "url(" + document.getElementById("img-url").value + ")";
+        }
+    </script>    
+
+</head>
+<body>
+    <div class="content">
+        <div class="flex-top">
+            <div>
+                <div class="flex-item1">
+                    <!-- Avatar-->
+                    <div class="notification"><p>2</p></div>
+                    <div class="avatar" id="profile"></div>
+                </div>
+                <div>
+                    <a href="https://google.com" class="on-hover">
+                    <p style="font-size: 10px;" id="myusername">Username, Gallery</p>
+                    </a>
+                </div>
+            </div>
+            <div class="flex-item2">
+                <!-- Input-->
+                <div><p>Username</label><input type="text" id="username"><button style="margin-left: 5px; margin-bottom: 0px;" onclick="display()">set</button></div>
+                <div><p>Image URL</label><input type="text" id="img-url"><button style="margin-left: 5px; margin-top: 0px; " onclick="setImage()">set</button></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" style="grid-column: span 2/ span 2; background-image: url(https://i.ytimg.com/vi/Yfu6G3f8Xxc/maxresdefault.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://admin.adaddictth.com/files/Quality%202022/web%202.png);"></div>
+            <div class="gallery-item" style="background-image: url(https://www.catdumb.com/wp-content/uploads/2022/02/4-3.png);"></div>
+            <div class="gallery-item" style="background-image: url(https://cdn.oneesports.co.th/cdn-data/sites/3/2021/12/Master-Daeng-.jpeg);"></div>
+            <div class="gallery-item" style="background-image: url(https://pbs.twimg.com/media/Eo_Qg8SVoAAeBIO.jpg);"></div>
+            <div class="gallery-item" style="grid-column: span 2/ span 2; background-image: url(https://thethaiger.com/th/wp-content/uploads/2023/09/%E0%B8%AD.%E0%B9%81%E0%B8%94%E0%B8%87-%E0%B8%81%E0%B8%B5%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B9%8C_-%E0%B8%9A%E0%B8%A3%E0%B8%A3%E0%B8%A2%E0%B8%B2%E0%B8%A2%E0%B8%98%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%B0.png);"></div>
+            <div class="gallery-item" style="background-image: url(https://down-th.img.susercontent.com/file/49ad531e579e335d943c1bc39e8c6b6e_tn);"></div>
+            <div class="gallery-item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYVyAcS5NKFlE3zzWHfTlgKBqkE0Y8U-BMuF5MN8NbzZeuGWBL3MYThKOx6-lPWSncXtk&usqp=CAU);"></div>
+            <div class="gallery-item" style="background-image: url(https://pbs.twimg.com/media/FKVygzuVQAQiWkn.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://f.ptcdn.info/251/076/000/r6phkmmxuGNF1erTdMG-o.jpg);"></div>
+        </div>
+    </div>
+</body>
+</html>
